@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.playlist-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.04) translateZ(0);
+    }
+}
+
+.playlist-name, .playlist-des {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.playlist-name {
+    color: var(--white);
+    width: 200px;
+    height: 24px;
+    font-weight: 700;
+    padding: 2px 0 0 0;
+}
+
+.playlist-des {
+    width: 200px;
+    height: 40px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,142 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    height: var(--default-layout-controller-height);
+    min-width: 768px;
+    padding: 0 20px;
+    background-color: var(--white);
+    border-top: 1px solid var(--border-player);
+
+    background-color: #111f3b;
+    border-top: 1px solid #ffffff1a;
+    width: 100%;
+}
+
+.controls-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        height: 24px;
+        padding: 0 8px;
+        cursor: pointer;
+    }
+}
+
+.addLibrary {
+    color: #158370;
+}
+
+.player-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-bar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 20px;
+        padding: 0 16px;
+        cursor: pointer;
+    }
+}
+
+.player-play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+
+    &:hover {
+        color: #158370;
+        border-color: #158370;
+    }
+}
+
+.loop {
+    color: #158370;
+}
+
+.player-bar-time {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    user-select: none;
+
+    span {
+        width: 68px;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 12px;
+    }
+}
+
+.progress-time,
+.progress-volume {
+    width: 480px;
+    background-color: var(--text-color);
+    -webkit-appearance: none;
+    height: 3px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    caret-color: transparent;
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--white);
+        cursor: pointer;
+
+        &:hover {
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.controls-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    span {
+        width: 20px;
+        height: 20px;
+        font-size: 1.8rem;
+        margin: 0 8px;
+        cursor: pointer;
+    }
+
+    .video {
+        cursor: not-allowed;
+    }
+}
+
+.progress-volume {
+    margin-left: 8px;
+    width: 70px;
+    height: 4px;
+}

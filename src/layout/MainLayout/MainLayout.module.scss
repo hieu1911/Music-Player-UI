@@ -1,0 +1,38 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar {
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    left: var(--default-layout-sidebar-width);
+    flex-direction: column;
+    height: calc(100% - var(--default-layout-controller-height));
+    width: var(--default-layout-width);
+    min-width: var(--default-layout-width);
+    max-width: var(--default-layout-width);
+    background-color: #0f1a2e;
+    align-items: center;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.content {
+    flex: 1;
+    margin-top: var(--default-layout-header-height);
+    width: 100%;
+}
